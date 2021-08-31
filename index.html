@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Calcular Indice de Masa Corporal <br>(IMC)</h1>
+        </header>
+        <section>
+            <div class=informacion>
+                <h2>¿Qué es el IMC?</h2>
+                <p>Definición: el índice de masa corporal (IMC) es un indicador simple de la relación entre el peso y la talla que se utiliza frecuentemente para identificar el sobrepeso y la obesidad en los adultos. Se calcula dividiendo el peso de una persona en kilos por el cuadrado de su talla en metros (kg/m²).</p>
+                <p>El inventor de la fórmula: el Índice de Masa Corporal (IMC) o Body Mass Index (BMI) fue ideado en 1835 por <a class="nombre" href="https://es.wikipedia.org/wiki/Adolphe_Quetelet" target="_blank">Adolphe Quetelet,</a> por lo que también recibe el nombre de índice de Quetelet.</p>
+                <img src="graficoIMC.png">
+            </div>
+            <div class=calculadora>
+                <h2>Calculadora de IMC</h2>
+                <div class=calcular>
+                    <label>Peso</label>
+                    <input id="peso" type="number" placeholder="peso en kilogramos"><br>
+                    <label>Talla</label>
+                    <input id="altura" type="number" placeholder="altura en metros"><br>
+                    <button id="imc" onclick="calcularIMC()">Calcular IMC</button> 
+                </div>
+                <p>El sobrepeso y la obesidad se definen como una acumulación anormal o excesiva de grasa que puede ser perjudicial para la salud</p>
+                <p>Para mas informacion sobre obecidad y sobrepeso, consulta la en la pagina de la OMS</p>  
+                <a href="https://www.who.int/es/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank">Obesidad y sobrepeso</a>
+            </div>
+        </section>
+
+        <script src="funcioncalcularIMC.js"></script>
+    
+    </body>
+</html>
